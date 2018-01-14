@@ -21,6 +21,11 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".ui.addeditnote.AddEditNoteActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.notes.NotesActivity" />
+
     </application>
 
 </manifest>

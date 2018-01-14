@@ -13,6 +13,7 @@ import java.util.List;
 
 import br.com.fatec.tg.gohorse.notes.R;
 import br.com.fatec.tg.gohorse.notes.data.entity.Note;
+import br.com.fatec.tg.gohorse.notes.ui.addeditnote.AddEditNoteActivity;
 import butterknife.BindInt;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -50,14 +51,14 @@ public class NotesActivity extends AppCompatActivity implements NotesAdapter.Ite
 
     @OnClick(R.id.fab_note_add_note)
     void onAddNoteClicked() {
-//        startActivity(AddEditNoteActivity.getStartIntent(this));
+        startActivity(AddEditNoteActivity.getStartIntent(this));
     }
 
     /********** NotesAdapter.ItemListener **********/
 
     @Override
     public void onNoteClicked(@NonNull Note note) {
-//        startActivity(AddEditNoteActivity.getStartIntent(this, note.getId()));
+        startActivity(AddEditNoteActivity.getStartIntent(this, note.getId()));
     }
 
     /********** Methods **********/
