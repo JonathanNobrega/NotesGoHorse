@@ -27,9 +27,9 @@
         android:animateLayoutChanges="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <include layout="@layout/activity_note_content" />
+        <include layout="@layout/activity_notes_content" />
 
-        <include layout="@layout/activity_note_placeholder" />
+        <include layout="@layout/activity_notes_placeholder" />
 
     </ViewFlipper>
 
