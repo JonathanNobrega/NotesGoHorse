@@ -94,7 +94,6 @@ public class AddEditNoteActivity extends AppCompatActivity {
             if (menuItem.getItemId() == R.id.add_edit_note_action_delete) {
                 if (note != null) {
                     deleteNoteById(note.getId());
-                    clearInputFields();
                     navigateToNotesScreen();
                 }
             }
@@ -104,11 +103,6 @@ public class AddEditNoteActivity extends AppCompatActivity {
 
     private void navigateToNotesScreen() {
         NavUtils.navigateUpFromSameTask(this);
-    }
-
-    private void clearInputFields() {
-        editTextNoteTitle.setText("");
-        editTextNoteDescription.setText("");
     }
 
     private void saveNote(@NonNull String title, @NonNull String description) {
